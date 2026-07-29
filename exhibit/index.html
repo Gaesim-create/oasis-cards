@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>전시 시스템 시연</title>
+<style>
+  html,body{margin:0;height:100%;background:#000;overflow:hidden;}
+  body{display:flex;align-items:center;justify-content:center;}
+  .wrap{display:flex;gap:8px;width:100%;justify-content:center;align-items:center;flex-wrap:wrap;box-sizing:border-box;padding:4px;}
+  .wrap video{width:calc(50% - 6px);height:auto;max-height:100vh;display:block;background:#000;border-radius:4px;}
+  @media(max-width:600px){.wrap video{width:100%;}}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <video src="vid1.mp4" autoplay muted loop playsinline preload="auto"></video>
+    <video src="vid2.mp4" autoplay muted loop playsinline preload="auto"></video>
+  </div>
+</body>
+</html>
